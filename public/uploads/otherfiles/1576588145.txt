@@ -1,0 +1,137 @@
+Reference links:
+---------------
+http://www.rastcodes.com/posts/laravel-starter-app-how-i-made-this-app-part-i
+http://www.rastcodes.com/posts/laravel-folder-structure-how-i-made-this-app-part-ii
+http://www.rastcodes.com/posts/laravel-routes-controllers-how-i-made-this-app-part-iii
+http://www.rastcodes.com/posts/laravel-blade-layout-how-i-made-this-app-part-iv
+http://rastcodes.com/posts/laravel-blade-dynamic-content-how-i-made-this-app-part-v
+
+https://github.com/anil-sidhu - laravel api git Reference link
+
+what is laravel?
+
+
+1. Install process of laravel
+   --------------------------
+   * install composer on your system
+   * Open composer and install using "composer global require laravel/installer" command  - install as global
+   * Create project using "laravel new <project_name>" OR 
+   * Create ptoject using composer "composer create-project --prefer-dist laravel/laravel blog"
+   * Open project in IDE Like what you need to work and start server using "php artisan serve"
+
+2. Laravel Directory Structure
+   ---------------------------
+   * App
+   * Bootstrap
+   * Config
+   * Database
+   * Public
+   * Resources
+   * Routes
+   * Storage
+   * Tests
+   * Vendor
+
+3. Config Database Details
+   -----------------------
+   * Open ".env" file and set database details given fields.
+		DB_DATABASE= "<Database>"
+		DB_USERNAME= "<Username>"
+		DB_PASSWORD= "<Password>"
+
+4. Views
+   -----
+   * Destination : "resources/views/"
+   * Create view files with format of "<filename.blade.php>"
+
+   blade template : 
+   ----------------
+   	<!------------Layout page : layouts.blade.php------------->
+    <html>
+	    <head>
+	        <title>App Name - @yield('title')</title>
+	    </head>
+	    <body>
+	        @section('sidebar')
+	            This is the master sidebar.
+	        @show
+
+	        <div class="container">
+	            @yield('content')
+	        </div>
+	    </body>
+	</html>
+
+	<!-----------Child Page : page.blade.php----------------->
+
+	@extends('layouts')
+
+	@section('title', 'Page Title')
+
+	@section('sidebar')
+	    @parent
+
+	    <p>This is appended to the master sidebar.</p>
+	@endsection
+
+	@section('content')
+	    <p>This is my body content.</p>
+	@endsection
+
+5 Routes
+  ------
+  * Routes as different methods
+    Route::get
+	Route::post
+	Route::put
+	Route::patch
+	Route::delete
+	Route::options
+
+	Example : 
+	Route::get('/about',function(){
+		return view('pages/page_name');
+	});
+	or
+	Route::get('/about','controllerName@functionName');
+
+
+
+6 Controller
+  ----------
+  * Destination : "app/Http/Controllers/"
+  * To Create controller by using Command "php artisan make:controller <ControllerName> --resource" with all pre-define methods.
+
+7 Migrations
+  ----------
+  * Destination : "database/migrations/"
+  * Migrations are used to create database tables or to maintain blue prints of database tables using command line.
+  * Follow command "php artisan make:migration <create_users_table>" to create migration files
+  * "php artisan migrate" is used to migrate files to execute.
+
+8 Model
+  -----
+  * Destination : "";
+  * Models are used to manage all database data and pass it to controller to display on views.
+  * Follow command "php artisan make:model <modelName> 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ laravel Commands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ ________________________________________________________________________________________________________
+|                                |                                                                       |
+| Name                           | Command                                                               |
+|________________________________|_______________________________________________________________________|
+|                                |                                                                       |
+| Gobal install Laravel          | # composer global require laravel/installer                           |
+| Create New Project             | # laravel new <projectname>                                           |
+| Create project via composer    | # composer create-project --prefer-dist laravel/laravel <projectname> |
+| Start Development server       | # php artisan serve                                                   |
+| Create controller              | # php artisan make:controller <ControllerName>                        |
+| Create controller with resource| # php artisan make:controller <ControllerName> --resources            |
+| Create Database Migrations     | # php artisan make:migration <create_users_table>  -m(create model)   |
+| Migrate file to execute        | # php artisan migrate                                                 |
+| Create Model                   | # php artisan make:model <modelName>                                  |
+| Site Down			 | # php artisan down							 |
+| Site Up			 | # php artisan up							 |
+| Create Seed (insert data in db)| # php artisan make:seed <Seed Name> 					 |
+| Seed (Make seed)		 | # php artisan seed							 |
+|________________________________|_______________________________________________________________________| 
