@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\DefaultModel;
 use DB;
+use Session;
 class WebsiteModel extends DefaultModel
 {
     public function aboutdetails()
@@ -83,5 +84,11 @@ class WebsiteModel extends DefaultModel
                 ->orderBy('portfolio_projects.id','DESC')
                 ->get();
         return $data;
+    }
+
+    public function usersLogsave($request)
+    {
+        $responce = $this->insert_data('portfolio_logs',$request);
+        return $responce;
     }
 }
