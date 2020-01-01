@@ -11,12 +11,22 @@
 |
 */
 
-Route::get('/', 'WebsiteController@index');
+if(date('Y-m-d') == '2020-01-01'){
+    Route::get('/', 'WebsiteController@indexWelcome');
+    Route::get('/home', 'WebsiteController@index');
+}else{
+    //Route::get('/', 'WebsiteController@indexWelcome');
+    Route::get('/', 'WebsiteController@index');
+}
+
+//Route::get('/', 'WebsiteController@indexWelcome');
+Route::get('/home', 'WebsiteController@index');
 Route::get('/aboutus', 'WebsiteController@aboutus');
 Route::get('/services', 'WebsiteController@services');
 Route::get('/portfolio', 'WebsiteController@portfolio');
 Route::get('/contactus', 'WebsiteController@contactus');
 Route::get('/portfolio/{id}/details', 'WebsiteController@portfoliodetails');
+
 
 Route::post('/ajaxRequest', 'WebsiteController@ajaxRequestPost');
 

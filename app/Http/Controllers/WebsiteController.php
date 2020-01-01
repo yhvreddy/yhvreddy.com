@@ -23,6 +23,11 @@ class WebsiteController extends Controller
         $this->skills       =   $this->website->skills();
     }
 
+    public function indexWelcome()
+    {
+        return view('newyearwishs');
+    }
+
     public function index()
     {
         $aboutdetails = $this->aboutdetails;
@@ -35,7 +40,12 @@ class WebsiteController extends Controller
         $skills = $this->skills;
         $logdata = $this->website->usersLogsave($this->usersLogs());
         //dd($logdata);
-        return view('home_page',compact('aboutdetails','projects','experences','services','educations','projectypes','testimonials','skills'));
+        if(date('Y') >= 2020){
+            $logdata = $this->website->usersLogsave($this->usersLogs());
+            return view('home_page',compact('aboutdetails','projects','experences','services','educations','projectypes','testimonials','skills'));
+        }else{
+            return view('lanching');
+        }
     }
 
 
