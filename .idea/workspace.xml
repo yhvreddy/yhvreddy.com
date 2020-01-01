@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6b43170-5664-4f49-a495-367eeec17be9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebsiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebsiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects_portfolio.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +113,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1VevJXK9yv1Bv4jEK9cN8np79K6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -157,16 +158,50 @@
       <workItem from="1577626305623" duration="4030000" />
       <workItem from="1577793307149" duration="97000" />
       <workItem from="1577793430931" duration="2977000" />
+      <workItem from="1577848834725" duration="264000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit Welcome And Lanching Files">
+      <created>1577848937005</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577848937005</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit Welcome And Lanching Files">
+      <created>1577848981611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577848981611</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit Welcome And Lanching Files">
+      <created>1577849000360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577849000360</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit Welcome And Lanching Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Welcome And Lanching Files" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1577848978958">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1577849009914">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1577848978958" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1577849009914" />
+    <state x="396" y="176" key="git4idea.merge.GitPullDialog" timestamp="1577849058767">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="396" y="176" key="git4idea.merge.GitPullDialog/0.0.1366.768@0.0.1366.768" timestamp="1577849058767" />
   </component>
 </project>
